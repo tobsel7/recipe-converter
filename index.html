@@ -142,7 +142,7 @@
         }
 
         // Calculate the conversion factor
-        conversionFactor = bakingDiameter / recipeDiameter;
+        conversionFactor = Math.pow(2 * bakingDiameter, 2) / Math.pow(2 * recipeDiameter, 2);
 
         // Display the conversion factor
         document.getElementById("conversion-factor").innerHTML = "The conversion factor for the recipe is " + conversionFactor.toFixed(2) + ".";
